@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="35px" viewBox="0 0 67 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home" transform="translate(-676.000000, -649.000000)" fill-rule="nonzero" stroke="#21D8CD" stroke-width="3">
+            <polyline id="arrow-button" points="678.422852 650.808594 741.207031 650.808594 709.814941 682.200684 694.118896 666.504639"></polyline>
+        </g>
+    </g>
+</svg>
