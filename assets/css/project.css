@@ -129,10 +129,10 @@ img {
 	border-bottom-color: transparent;
 	color: #21D8CD;
 }
-
+/* CASE STUDIES */
 /* hero */
 .hero {
-  background-image: url("../images/AShero.jpg");
+  background-image: url("https://sktorres.github.io/STPortfolio/images/AShero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -356,7 +356,7 @@ tr:nth-child(odd) td {
   padding:2rem;
 }
 .userflow{
-  background-image: url("../images/autoshow_IA.png");
+  background-image: url("https://sktorres.github.io/STPortfolio/images/autoshow_IA.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
