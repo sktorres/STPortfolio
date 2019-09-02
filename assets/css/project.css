@@ -48,6 +48,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 /* Case Studies */
 .cs-container,
 .header,
@@ -58,11 +59,11 @@ img {
 .personas,
 .userstories,
 .flows,
+.sktch,
 .wireframes,
 .visdes,
 .usability,
-.fin,
-.ft{
+.fin{
   display:grid;
 }
 .header,
@@ -75,9 +76,9 @@ img {
 .flows,
 .wireframes,
 .visdes,
+.colors,
 .usability,
-.fin,
-.ft{
+.fin{
   grid-column: 1 / -1;
   grid-row: auto;
   grid-template-columns: repeat(12, 1fr);
@@ -134,7 +135,7 @@ img {
 .hero {
   background-image: url("https://sktorres.github.io/STPortfolio/images/AShero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   height: 100vh;
 }
 
@@ -307,7 +308,7 @@ img {
   padding:2rem;
 }
 .us_table_shell {
-  padding: 0 0 6vh 0;
+  padding: 5vh 0 6vh 0;
 }
 
 .us_table_shell h4 {
@@ -356,24 +357,178 @@ tr:nth-child(odd) td {
   padding:2rem;
 }
 .userflow{
-  background-image: url("https://sktorres.github.io/STPortfolio/images/autoshow_IA.png");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  grid-column: 1 / -1;
+  width:100%
+  padding:3rem 0;
 }
 /* wireframes */
-.wireframes{
+.sktch{
   background-color:#333745;
   justify-items:center;
   align-items:center;
 }
-.wireframes-intro{
+.sktch-intro{
   grid-column: 1 / -1;
   max-width:70%;
   padding:2rem;
 }
-.wireframes h3,
-.wireframes p,
-.wireframes h4{
+.sktch h3,
+.sktch p,
+.sktch h4{
   color:#fff;
+}
+/** Visual Design **/
+.visdes{
+  background-color: #FFF;
+  justify-items:center;
+  align-items:center;
+  padding: 2rem;
+}
+.visdes-intro{
+  grid-column: 1 / -1;
+  max-width:70%;
+}
+/** Typography **/
+
+.type_shell {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.typ_cont {
+  background: #F2EFED;
+  padding: 4rem 2.4rem;
+  margin-bottom: 4rem;
+  min-width: 37.5rem;
+}
+
+.img_typ_1 {
+  background-image: url("../images/faricy_small.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 20.8rem;
+}
+
+.img_typ_2 {
+  background-image: url("../images/lato_small.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 20.8rem;
+}
+/** Colors **/
+.colors{
+  background-color:#F4FAFF;
+  justify-items:center;
+  align-items:center;
+}
+.colors-intro{
+  grid-column: 1 / -1;
+  max-width:70%;
+  padding:2rem;
+}
+.swatch {
+  align-content:center;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template: repeat(2, 225px) / repeat(4, 225px);
+  justify-content:center;
+  padding: 2rem 2rem;
+}
+.swatch > div {
+  text-align: center:
+}
+.col1 {
+  background-color: #3366B8;
+  color: #fff;
+}
+
+.col2 {
+  background-color: #2B3947;
+  color: #fff;
+}
+
+.col3 {
+  background-color: #A2C2E9;
+}
+
+.col4 {
+  background-color: #3A687F;
+  color: #fff;
+}
+
+.col5 {
+  background-color: #47A8DC;
+  color: #fff;
+}
+
+.col6 {
+  background-color: #8D99A8;
+}
+
+.col7 {
+  background-color: #FBFCFD;
+}
+
+.col8 {
+  background-color: #EAF1F7;
+}
+
+.slide_cont {
+  display: block;
+  position: relative;
+}
+
+.sgSlides {
+  /* display: none; */
+   width: 100%;
+}
+
+
+.display_left {
+  left: 0%;
+}
+
+.display_right {
+  right: 0%;
+}
+/* Conclusion */
+.fin{
+  background-color:#fff;
+  justify-items:center;
+  align-items:center;
+}
+.fin-intro{
+  grid-column: 1 / -1;
+  max-width:70%;
+  padding:2rem;
+}
+/* Footer */
+.ft{
+  display:inline-block;
+  background-color: #21D8CD;
+  width:100%
+  }
+.copyright {
+  float:left;
+  color: #fff;
+  line-height: 1;
+  padding: 3rem 1rem;
+}
+.icons li{
+  float:right;
+  list-style:none;
+  padding:3rem 1rem 3rem 0;
+}
+
+@media screen and (max-width: 480px) {
+
+.ft .copyright li {
+  display: block;
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  line-height: inherit;
 }

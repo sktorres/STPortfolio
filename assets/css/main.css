@@ -33,11 +33,27 @@ h2{
 h3{
 	font-size: 2.25rem;
 }
-
-.container{
+.container,
+.header,
+.hr,
+.casestudies,
+.contact,
+.ft{
   display:grid;
+}
+.container,
+.header,
+.hr,
+.casestudies,
+.contact,
+.ft{
+  grid-column: 1 / -1;
+  grid-row: auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15% auto auto auto 15%;
+}
+.container{
+grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
   width:100%;
   height:auto;
 }
@@ -67,29 +83,43 @@ h3{
 }
 
 /* header/nav */
-.hd {
-	background-color: #FFFEFC;
-  grid-row: 1 / -1;
+.header {
+  align-items: center;
+	background-color: #333745;
+	height: 8.125rem;
+	margin:0;
+	overflow: hidden;
+	position: inline-block;
+  padding: 2rem 1rem;
+  width:100%;
 }
-
-.logo{
-  color: #2C8C99;
-  font-weight:600;
-  grid-area:  1 / 2 / -1 / 8;
-	line-height: 2rem;
-  padding:3rem 0;
+.logo {
+	display:grid;
+  grid-column: 2 / 3;
+	height: 4rem;
+  padding:0 2rem;
+	vertical-align:middle;
 }
-.logo h3{
-	color: #21D8CD;
-	font-weight:100;
-	line-height: .5rem;
-}
-.logo span{
-	font-weight:100;
-}
-
 .nav{
-	grid-area: 1 / 9 / -1 / 12;
+  display:grid;
+  grid-column: 9 / -1;
+  margin-left: auto;
+}
+.header ul li{
+	display:inline-block;
+}
+.header ul li a{
+	color: #F4FAFF;
+	font-family: Montserrat, sans-serif;
+	font-weight: 600;
+	padding-right: 2rem;
+	text-align: center;
+	text-decoration: none;
+  vertical-align:middle;
+}
+.header ul li a:hover {
+	border-bottom-color: transparent;
+	color: #21D8CD;
 }
 
 .nav ul li a{
@@ -109,17 +139,17 @@ h3{
 /* hero */
 
 .hr{
-  grid-area: 2 / 1 / -2 / 12;
+  grid-column: 1 / -1;
 	padding:4rem;
 	position: relative;
 }
 
 .heroleft{
-  grid-area: 2 / 2 / -2 / 6;
+  grid-column: 2 /  7;
 }
 
 .heroright{
-  grid-area: 2 / 7 / -2 / 12;
+  grid-area: 7 / -1;
 }
 
 .heroright p{
